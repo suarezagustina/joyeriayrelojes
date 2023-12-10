@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+#imagenfondo{
+    background-image: url(../img/bannerjoyeria.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 22em;
+}
+
+.tituloBanner{
+    color: rgb(0, 0, 0);
+    padding-top: 2em;
+    font-family: 'Beau Rivage', cursive;
+    font-size: 90px;
+}
+
+#imagenLogo{
+    width: 250px;
+}
+
+.parrafoNosotros{
+    font-family: 'Noto Serif JP', serif;
+}
+
+.imgCarrusel{
+    object-fit: cover;
+    height: 370px;
+}
+
+#videosNosotros{
+    width: 300px;
+    height: 400px;
+}
+
+.textoInfoNosotros{
+    font-family: 'EB Garamond', serif;
+    color: black;
+    font-size: 18px;
+}
+
+.textoFraseNosotros{
+    font-family: 'Playfair Display', serif;
+}
+
+.tituloNosotros{
+    font-family: 'Crimson Text', serif;
+    font-size: 25px;
+}
+
+.tituloBanner2{
+font-family: 'Beau Rivage', cursive;
+}
