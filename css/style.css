@@ -16,7 +16,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 20em;
+    height: 18em;
 }
 .tituloBanner{
     color: rgb(0, 0, 0);
@@ -24,7 +24,7 @@
     font-family: 'Beau Rivage', cursive;
     font-size: 90px;
 }
-.tituloBanner2{
+.tituloBanner3{
     color: rgb(0, 0, 0);
     padding-top: 1em;
     font-family: 'Beau Rivage', cursive;
