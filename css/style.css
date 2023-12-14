@@ -167,3 +167,14 @@ font-family: 'Beau Rivage', cursive;
   .iconsFooter{
     color: hotpink;
   }
+  .logoFooter{
+    width: 200px;
+    height: 80px;
+  }
+  @media screen and (max-width: 700px){
+    .footerColumnas{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    }
