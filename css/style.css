@@ -171,10 +171,30 @@ font-family: 'Beau Rivage', cursive;
     width: 200px;
     height: 80px;
   }
+  .imgCarruselindex{
+    object-fit: cover;
+    height: 510px;
+  }
+  
   @media screen and (max-width: 700px){
     .footerColumnas{
         display: flex;
         flex-direction: column;
         text-align: center;
     }
+    #carruselindex{
+        display: none;
     }
+    #carruselindex2 {
+        display: block !important;
+     }
+    .imgCarruselindex2{
+        object-fit: cover;
+        height: 600px;
+    }
+    }
+    @media only screen and (max-width: 1500px) and (min-width: 701px) {
+        #carruselindex2 {
+            display: none !important;
+         }
+       }
