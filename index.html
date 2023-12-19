@@ -8,11 +8,12 @@
   <meta name="description" content="Proyecto modulo 2 Joyeria y Relojes. Grupo 2" />
   <meta name="keywords" content="Joyeria, Anillos, Collares, Relojes" />
   <title>Rolling charms</title>
-  <link rel="icon" href="./img/logorc.png" id="logorc" />
+  <link rel="icon" href="./img/logorc.png" id="logorc"/>
   <link rel="stylesheet" href="./css/style.css" />
   <script src="https://kit.fontawesome.com/45b1b8eaf4.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -95,7 +96,7 @@
             <input class="form-control me-2 botonBusqueda" type="search" placeholder="Buscar productos..."
               aria-label="Search">
             <div class="boton">
-              <button class="botonBuscar" type="submit">Buscar</button>
+              <button id="botonBuscar" type="submit">Buscar</button>
             </div>
           </form>
         </div>
@@ -146,7 +147,312 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
+<article class="presentacionIndex">
+<div class="container p-4 d-flex">
+  <div id="carruselidex3" class="carousel slide col-lg-6 col-md-6" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/presentacionIndex.jpeg" class="d-block w-100 imgPresentacion" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/presentacionIndex2.jpeg" class="d-block w-100 imgPresentacion" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/presentacionIndex3.webp" class="d-block w-100 imgPresentacion" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/presentacionIndex4.jpg" class="d-block w-100 imgPresentacion" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/presentacionIndex5.jpeg" class="d-block w-100 imgPresentacion" alt="...">
+      </div>
+    </div>
+  </div>
+  <div class="text-center ms-lg-5  col-lg-6 presentacion">
+    <img src="./img/logorc.png" alt="logo rollingcharms" id="logoPresentacion">
+    <p class="mt-lg-1">
+    Con más de 20 años de experiencia, ofrecemos a
+nuestros clientes la máxima seguridad y el mejor
+precio del mercado.  Nuestro exclusivo catálogo de piezas únicas y 
+personalizadas refleja tu estilo y personalidad. 
+Desde delicados collares hasta deslumbrantes anillos y relojes
+nuestras joyas están diseñadas con amor y atención al detalle.
+  </p>
+</div>
+</div>
+</article>
+<article class="container mt-lg-3 cards d-flex">
+  <div class="col-lg-3 text-center cardsPromociones p-2 d-flex flex-column justify-content-center">
+    <i class="fa-regular fa-credit-card fa-3x cardsIcon mt-1"></i>
+    <h2 class="cardsTitulo mt-lg-1">Cuotas</h2>
+    <p class="cardsParrafo">3 y 6 cuotas sin interés</p>
+  </div>
+  <div class="col-lg-3 text-center cardsPromociones p-2 mx-lg-3 d-flex flex-column justify-content-center">
+    <i class="fa-solid fa-gift fa-3x cardsIcon mt-1"></i>
+    <h2 class="cardsTitulo mt-lg-1">Regalos</h2>
+    <p class="cardsParrafo">Elegí nuestras joyas para regalar en cada momento especial</p>
+  </div>
+  <div class="col-lg-3 text-center cardsPromociones p-2 d-flex flex-column justify-content-center">
+    <i class="fa-solid fa-truck-fast fa-3x cardsIcon mt-1"></i>
+    <h2 class="cardsTitulo mt-lg-1">Envío gratis</h2>
+    <p class="cardsParrafo">Envío gratis en compras de $180.000 o más</p>
+  </div>
+  <div class="col-lg-3 text-center cardsPromociones p-2 ms-lg-3 d-flex flex-column justify-content-center">
+    <i class="fa-solid fa-check-to-slot fa-3x cardsIcon mt-1"></i>
+    <h2 class="cardsTitulo mt-lg-1">Garantía </h2>
+    <p class="cardsParrafo">Garantías y devoluciones aseguradas</p>
+  </div>
+</article>
+<section class="container p-3 mt-lg-1">
+  <h2 class="tituloProductos1">Productos Destacados</h2>
+  <article class="d-flex cardsPD">
+  <div class="card col-lg-3 p-1 text-center cards">
+    <div class="card-body">
+      <h6 class="card-subtitle mb-2 text-body-secondary textNuevo">Nuevo</h6>
+      <img src="./img/anillomujer.png" class="w-100" alt="">
+      <h5 class="card-title cardsTituloProductos">Anillo Mujer Oro Amarillo 18K</h5>
+      <p class="textCardProducto">Anillo con diseño de bandas compuesto por 3 filas de circonitas,
+         con una fila central de 7 circonitas de talla esmeralda. </p>
+      <h5 class="precioProducto">$80.000</h5>
+      <button href="#" class="botonCarrito">Agregar al carrito</button>
+    </div>
+  </div>
+  <div class="card col-lg-3 p-1 text-center mx-lg-3 cards">
+    <div class="card-body">
+      <h6 class="card-subtitle mb-2 text-body-secondary textNuevo">Nuevo</h6>
+      <img src="./img/collarmujer.png" class="w-100" alt="">
+      <h5 class="card-title cardsTituloProductos">Collar Corazón elevado</h5>
+      <p class="textCardProducto">Deja que tu amor guíe tu estilo con este collar Corazon
+         de plata esterlina que se puede usar 
+        en dos diferentes longitudes gracias a su broche ajustable.</p>
+      <h5 class="precioProducto">$95.000</h5>
+    <a href="./pages/error404.html"><button href="#" class="botonCarrito">Agregar al carrito</button></a>
+    </div>
+  </div>
+  <div class="card col-lg-3 p-1 text-center cards">
+    <div class="card-body">
+      <h6 class="card-subtitle mb-2 text-body-secondary textNuevo">Nuevo</h6>
+      <img src="./img/relojmujer.jpg" class="w-100 relojmujer" alt="">
+      <h5 class="card-title cardsTituloProductos">Reloj original tono dorado</h5>
+      <p class="textCardProducto"> El reloj presenta índices de varilla en tono de oro 
+        y un movimiento de tres manecillas con un brazalete de acero inoxidable.</p>
+      <h5 class="precioProducto">$85.000</h5>
+      <a href="./pages/error404.html"><button href="#" class="botonCarrito">Agregar al carrito</button></a>
+    </div>
+  </div>
+  <div class="card col-lg-3 p-1 text-center ms-lg-3 cards">
+    <div class="card-body">
+      <h6 class="card-subtitle mb-2 text-body-secondary textNuevo">Nuevo</h6>
+      <img src="./img/anillomujer2.png" class="w-100" alt="">
+      <h5 class="card-title cardsTituloProductos">Anillo Bella</h5>
+      <p class="textCardProducto">Transpórtate a un mundo mágico con el Anillo en plata
+         Rosa de la Bella y la Bestia de Disney. Inspirado en la rosa encantada de la película, 
+         tiene en el centro una rosa color rojo rodeada de hojas.</p>
+      <h5 class="precioProducto">$80.000</h5>
+      <a href="./pages/error404.html"><button href="#" class="botonCarrito">Agregar al carrito</button></a>
+    </div>
+  </div>
+</article>
+</section>
+<section class="mt-lg-1 presentacionIndex2 p-lg-2 d-flex">
+  <div class="container">
+    <div class="col-lg-4 ms-lg-4 videoIndexsm">
+      <video autoplay controls src="./img/20231218_2035451 (1).mp4" class="videoIndex"></video>
+  </div>
+</div>
+  <div class="col-lg-8 text-center instagram">
+    <a href="./pages/error404.html"><i class="fa-brands fa-instagram fa-3x iconsFooter"></i></a>
+   <h2 class="instaIndex text-decoration-none">rolling_charms</h2>
+   <a href="./pages/error404.html">
+   <div class="d-flex justify-content-center">
+  <div>
+    <img src="./img/instaimg1.jpg" alt="" class="instaFotos object-fit-cover">
+  </div>
+  <div class="ms-lg-3">
+    <img src="./img/instaimg2.jpg" alt="" class="instaFotos object-fit-cover">
+  </div>
+  <div class="mx-lg-3">
+    <img src="./img/instaimg3.jpg" alt="" class="instaFotos object-fit-cover">
+  </div>
+  <div>
+    <img src="./img/instaimg4.jpg" alt="" class="instaFotos object-fit-cover">
+  </div>
+  <div class=" ms-lg-3">
+    <img src="./img/instaimg5.jpg" alt="" class="instaFotos object-fit-cover">
+  </div>
+   </div>
+  </a>
+   <a href="./pages/error404.html">
+   <div class="d-flex justify-content-center mt-lg-4">
+  <div>
+    <img src="./img/instaimg6.jpg" alt="" class="instaFotos object-fit-cover">
+  </div>
+  <div class=" ms-lg-3">
+    <img src="./img/instaimg7.jpg" alt="" class="instaFotos object-fit-cover">
+  </div>
+  <div class="mx-lg-3">
+    <img src="./img/instaimg8.jpg" alt="" class="instaFotos object-fit-cover">
+  </div>
+  <div>
+    <img src="./img/instaimg9.jpg" alt="" class="instaFotos object-fit-cover">
+  </div>
+  <div class="ms-lg-3">
+    <img src="./img/instaimg10.jpg" alt="" class="instaFotos object-fit-cover">
+  </div>
+   </div>
+  </a>
+   <a href="./pages/error404.html">
+   <div class=" d-flex justify-content-center mt-lg-4">
+  <div>
+    <img src="./img/instaimg12.jpg" alt="" class="instaFotos object-fit-cover">
+  </div>
+  <div class=" ms-lg-3">
+    <img src="./img/instaimg11.jpg" alt="" class="instaFotos object-fit-cover">
+  </div>
+  <div class="mx-lg-3">
+    <img src="./img/instaimg12.jpg" alt="" class="instaFotos object-fit-cover">
+  </div>
+  <div>
+    <img src="./img/instaimg14.jpg" alt="" class="instaFotos object-fit-cover">
+  </div>
+  <div ms-lg-3">
+    <img src="./img/instaimg15.jpg" alt="" class="instaFotos object-fit-cover">
+  </div>
+   </div>
+  </a>
+  </section>
+  <section class="container listaProductos" id="productosLista">
+    <h2 class="tituloProductos1 mt-lg-1 display-3">Anillos</h2>
+    <article class="d-flex justify-content-center cardproducto">
+    <div class="card col-lg-3 p-1 text-center cardsproducto">
+      <div class="card-body">
+        <h6 class="card-subtitle text-body-secondary textcoleccion">Oro de 18k</h6>
+        <img src="./img/anilloproducto1.jpg" class="w-100" alt="">
+        <h5 class="card-title cardsTituloProductos2 producto">Círculo de Semillas</h5>
+        <h5 class="precioProducto2">$25.000</h5>
+        <a href="./pages/error404.html"><button href="#" class="botonCarrito2">Agregar al carrito</button></a>
+      </div>
+    </div>
+    <div class="card col-lg-3 p-1 text-center ms-lg-3 cardsproducto">
+      <div class="card-body ">
+        <h6 class="card-subtitle text-body-secondary textcoleccion">Oro Rosa de 14k</h6>
+        <img src="./img/anilloproducto2.png" class="w-100" alt="">
+        <h5 class="card-title cardsTituloProductos2 producto">Anillo Corona de Margaritas</h5>
+        <h5 class="precioProducto2">$18.000</h5>
+        <a href="./pages/error404.html"><button href="#" class="botonCarrito2">Agregar al carrito</button></a>
+      </div>
+    </div>
+    <div class="card col-lg-3 p-1 text-center ms-lg-3 cardsproducto">
+      <div class="card-body ">
+        <h6 class="card-subtitle text-body-secondary textcoleccion">Oro de 14k</h6>
+        <img src="./img/anilloproducto3.png" class="w-100" alt="">
+        <h5 class="card-title cardsTituloProductos2 producto">Anillo Corona Reluciente</h5>
+        <h5 class="precioProducto2">$20.000</h5>
+        <a href="./pages/error404.html"><button href="#" class="botonCarrito2">Agregar al carrito</button></a>
+      </div>
+    </div>
+    <div class="card col-lg-3 p-1 text-center ms-lg-3 cardsproducto">
+      <div class="card-body ">
+        <h6 class="card-subtitle text-body-secondary textcoleccion">Plata esterlina</h6>
+        <img src="./img/anilloproducto4.png" class="w-100" alt="">
+        <h5 class="card-title cardsTituloProductos2 producto">Anillo Dulce Promesa</h5>
+        <h5 class="precioProducto2">$10.000</h5>
+        <a href="./pages/error404.html"><button href="#" class="botonCarrito2">Agregar al carrito</button></a>
+      </div>
+    </div>
+  </article>
+  <div class="text-center">
+  <button type="button" href="./pages/anillos.html" class="botonCarrito2 mt-lg-3 fs-5">Ver la coleccion</button>
+  </div>
+  </section>
+  <section class="container">
+    <h2 class="tituloProductos1 mt-lg-2 display-3">Collares</h2>
+    <article class="d-flex justify-content-center cardproducto">
+    <div class="card col-lg-3 p-1 text-center cardsproducto">
+      <div class="card-body">
+        <h6 class="card-subtitle text-body-secondary textcoleccion">Plata esterlina</h6>
+        <img src="./img/collarproducto1.png" class="w-100" alt="">
+        <h5 class="card-title cardsTituloProductos2">Collar resplandeciente</h5>
+        <h5 class="precioProducto2">$30.000</h5>
+        <a href="./pages/error404.html"><button href="#" class="botonCarrito2">Agregar al carrito</button>
+      </div>
+    </div>
+    <div class="card col-lg-3 p-1 text-center ms-lg-3 cardsproducto">
+      <div class="card-body">
+        <h6 class="card-subtitle text-body-secondary textcoleccion">Oro de 14k</h6>
+        <img src="./img/collarproducto2.png" class="w-100" alt="">
+        <h5 class="card-title cardsTituloProductos2">Collar Estrella Fugaz</h5>
+        <h5 class="precioProducto2">$35.000</h5>
+        <a href="./pages/error404.html"><button href="#" class="botonCarrito2">Agregar al carrito</button></a>
+      </div>
+    </div>
+    <div class="card col-lg-3 p-1 text-center ms-lg-3 cardsproducto">
+      <div class="card-body">
+        <h6 class="card-subtitle text-body-secondary textcoleccion">Plata</h6>
+        <img src="./img/collarproducto3.png" class="w-100" alt="">
+        <h5 class="card-title cardsTituloProductos2">Collar Árbol de Vida y Luna</h5>
+        <h5 class="precioProducto2">$21.000</h5>
+        <a href="./pages/error404.html"><button href="#" class="botonCarrito2">Agregar al carrito</button></a>
+      </div>
+    </div>
+    <div class="card col-lg-3 p-1 text-center ms-lg-3 cardsproducto">
+      <div class="card-body">
+        <h6 class="card-subtitle text-body-secondary textcoleccion">Oro rosa de 14k</h6>
+        <img src="./img/collarproducto4.png" class="w-100" alt="">
+        <h5 class="card-title cardsTituloProductos2">Collar Corazón reluciente</h5>
+        <h5 class="precioProducto2">$36.000</h5>
+        <a href="./pages/error404.html"><button href="#" class="botonCarrito2">Agregar al carrito</button></a>
+      </div>
+    </div>
+  </article>
+  <div class="text-center">
+    <button href="./pages/collares.html" class="botonCarrito2 mt-lg-3 mb-lg-2 fs-5">Ver la coleccion</button>
+    </div>
+  </section>
+  <section class="container">
+    <h2 class="tituloProductos1 display-3">Relojes</h2>
+    <article class="d-flex justify-content-center cardproducto">
+    <div class="card col-lg-3 p-1 text-center cardsproducto">
+      <div class="card-body">
+        <h6 class="card-subtitle text-body-secondary textcoleccion">Bañado en Oro</h6>
+        <img src="./img/relojesproducto1.webp" class="w-100" alt="">
+        <h5 class="card-title cardsTituloProductos2">Reloj Diamond</h5>
+        <h5 class="precioProducto2">$35.000</h5>
+        <a href="./pages/error404.html"><button href="#" class="botonCarrito2">Agregar al carrito</button></a>
+      </div>
+    </div>
+    <div class="card col-lg-3 p-1 text-center ms-lg-3 cardsproducto">
+      <div class="card-body">
+        <h6 class="card-subtitle text-body-secondary textcoleccion">Con 17 Diamantes</h6>
+        <img src="./img/relojesproducto2.webp" class="w-100" alt="">
+        <h5 class="card-title cardsTituloProductos2">Reloj Diamond Black</h5>
+        <h5 class="precioProducto2">$38.000</h5>
+        <a href="./pages/error404.html"> <button href="#" class="botonCarrito2">Agregar al carrito</button></a>
+      </div>
+    </div>
+    <div class="card col-lg-3 p-1 text-center ms-lg-3 cardsproducto">
+      <div class="card-body">
+        <h6 class="card-subtitle text-body-secondary textcoleccion">Con 70 Diamantes</h6>
+        <img src="./img/relojesproducto3.webp" class="w-100" alt="">
+        <h5 class="card-title cardsTituloProductos2">Reloj RC One</h5>
+        <h5 class="precioProducto2">$40.000</h5>
+        <a href="./pages/error404.html"> <button href="#" class="botonCarrito2">Agregar al carrito</button> </a>
+      </div>
+    </div>
+    <div class="card col-lg-3 p-1 text-center ms-lg-3 cardsproducto">
+      <div class="card-body">
+        <h6 class="card-subtitle text-body-secondary textcoleccion">Con 100 Diamantes</h6>
+        <img src="./img/relojesproducto4.webp" class="w-100" alt="">
+        <h5 class="card-title cardsTituloProductos2">Reloj Medusa Diamond</h5>
+        <h5 class="precioProducto2">$60.000</h5>
+        <a href="./pages/error404.html"> <button href="#" class="botonCarrito2">Agregar al carrito</button></a>
+      </div>
+    </div>
+  </article>
+  <div class="text-center">
+    <button href="./pages/relojes.html" class="botonCarrito2 mt-lg-3 mb-3 fs-5">Ver la coleccion</button>
+    </div>
+  </section>
 </main>
   <footer>
     <article class="col-lg-12 col-md-12 col-sm-12">
@@ -185,6 +491,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
