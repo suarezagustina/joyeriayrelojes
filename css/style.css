@@ -457,7 +457,6 @@ font-family: 'Beau Rivage', cursive;
       display: none;
     }
     .presentacionIndex{
-        flex-direction: column;
         margin-bottom: 15px;
     }
     .imgPresentacion{
@@ -467,6 +466,7 @@ font-family: 'Beau Rivage', cursive;
         width: auto;
         margin-top: 10px;
         display: flex;
+        flex-direction: column;
         align-items: center;
     }
     .cards{
