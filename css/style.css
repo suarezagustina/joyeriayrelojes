@@ -3,6 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex-grow: 1;
+}
 #logorc{
     width: 50px;
 }
@@ -143,3 +151,30 @@
 .tituloBanner2{
 font-family: 'Beau Rivage', cursive;
 }
+.lineaFooter:hover {
+    text-decoration-line: underline;
+    text-decoration-color: hotpink;
+  }
+  .titulosFooter{
+    color: black;
+    font-family: 'Crimson Text', serif;
+    font-size: 28px;
+  }
+  .textosFooter{
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+  }
+  .iconsFooter{
+    color: hotpink;
+  }
+  .logoFooter{
+    width: 200px;
+    height: 80px;
+  }
+  @media screen and (max-width: 700px){
+    .footerColumnas{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    }

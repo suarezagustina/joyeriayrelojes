@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="pablo figueroa">
+    <title>detalles de produtos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<article>                             
+        <img src="img/logorollingcharms.jpg" alt="">
+    </article>   
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/7771894.jpg" alt="">
+                    </div>
+                    <p class="descripcion">anillo diamante </p>
+                    <span class="precio">$ 230.000000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/UT8WprBX6tbXXagOFbX7.jpg_640x640Q90.jpg_.webp" alt="">
+                    </div>
+                    <p class="descripcion" id>NIKE RUNNING TERRA </p>
+                    <span class="precio">$ 1.00000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Reloj-TAG-Heuer-Carrera-CBN2011.BA0642.jpg" alt="">
+                    </div>
+                    <p class="descripcion">reloj azul</p>
+                    <span class="precio">$ 35.0000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Reloj-TAG-Heuer-Carrera-WBN2013.BA0640a.jpg" alt="">
+                    </div>
+                    <p class="descripcion">reloj negro</p>
+                    <span class="precio">$ 1.800</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Reloj-TAG-Heuer-Fangio-CV201AT_FC6475a.jpg" alt="">
+                    </div>
+                    <p class="descripcion">reloj fangio</p>
+                    <span class="precio">$ 1300000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/reloj-cronografo-chicago-1a.jpg" alt="">
+                    </div>
+                    <p class="descripcion">reloj cronografo</p>
+                    <span class="precio">$ 2.00000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/H306bebcb8e3a4e20812b98c4847c3d0aM.jpg_640x640Q90.jpg_.webp" alt="">
+                    </div>
+                    <p class="descripcion">pulcera cadena de serpiente</p>
+                    <span class="precio">$ 2.500</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/D_NQ_NP_989464-MLA49452936382_032022-O.webp" alt="">
+                    </div>
+                    <p class="descripcion">pulcera bulgary</p>
+                    <span class="precio">$ 6.8000</span>
+                </div>
+            </div> 
+        </div>
+        
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/7771894.jpg" alt="" id="img">
+                <h2 id="modelo">anillo diamante</h2>
+                <p id="descripcion">anillo de diamante unico</p>
+
+                <span class="precio" id="precio">$ 230.000000</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">tamaño</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/detalles.js"></script>
+</body>
+</html>
