@@ -1,3 +1,48 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const productos = [
+      { codigo: '001', nombre: 'Diamond', detalle: 'Bañado en oro', precio: 35000, categoria: 'Relog' },
+      { codigo: '002', nombre: 'Diamond Black', detalle: '17 diamantes', precio: 38000, categoria: 'Relog' },
+      { codigo: '003', nombre: 'RC One', detalle: '170 diamantes', precio: 40000, categoria: 'Relog' },
+      { codigo: '004', nombre: 'Medusa Diamond', detalle: '100 diamantes', precio: 60000, categoria: 'Relog' },
+      { codigo: '005', nombre: 'Resplandeciente', detalle: 'Plata esterlina', precio: 30000, categoria: 'Collares' },
+      { codigo: '006', nombre: 'Estrella fugaz', detalle: 'Oro de 14k', precio: 35000, categoria: 'Collares' },
+      { codigo: '007', nombre: 'Arbol de vida y luna', detalle: 'Plata', precio: 21000, categoria: 'Collares' },
+      { codigo: '008', nombre: 'Corazon reluciente', detalle: 'Oro rosa de 14k', precio: 36000, categoria: 'Collares' },
+      { codigo: '008', nombre: 'Circulo de semillas', detalle: 'Oro de 18k', precio: 25000, categoria: 'Anillos' },
+      { codigo: '010', nombre: 'Corona de margaritas', detalle: 'Oro rosa de 14k', precio: 18000, categoria: 'Anillos' },
+      { codigo: '011', nombre: 'Corona reluciente', detalle: 'Oro de 14k', precio: 20000, categoria: 'Anillos' },
+      { codigo: '012', nombre: 'Dulce promesa', detalle: 'Plata esterlina', precio: 10000, categoria: 'Anillos' },
+    ];
+    const tableBody = document.querySelector('#productTable tbody');
+    function cargarTabla() {
+      tableBody.innerHTML = '';
+      for (let i = 0; i < productos.length; i++) {
+        const producto = productos[i];
+        const row = tableBody.insertRow();
+        row.innerHTML = `
+          <td>${producto.codigo}</td>
+          <td>${producto.nombre}</td>
+          <td>${producto.detalle}</td>
+          <td>${producto.precio}</td>
+          <td>${producto.categoria}</td>
+          <td>
+            <button onclick="editarProducto('${producto.codigo}')">Editar</button>
+            <button onclick="eliminarProducto('${producto.codigo}')">Eliminar</button>
+          </td>
+        `;
+      }
+    }
+    function darDeAltaProducto() {
+      
+    }
+    window.editarProducto = function(codigo) {
+      
+    };
+    window.eliminarProducto = function(codigo) {
+    
+    };
+    cargarTabla();
+  });
 const btnIniSesion = document.getElementById("ini-sesion"),
       btnregistro = document.getElementById("registro"),
       formRegister = document.querySelector(".register"),
